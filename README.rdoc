@@ -1,11 +1,10 @@
 == EVNTLR
 
-```html
 EVNTLR PREMIERE EVENT/NETWORKING APP COMING SOON!!
 
 produced in Wyncode by team Evntlr
 
-Jake Jacobson\n
-Keith Tang\n
+Jake Jacobson | 
+Keith Tang | 
 Paul Smailis
-```
+
