@@ -4,6 +4,15 @@ class MessagesController < ApplicationController
   end
 
   def create
-    redirect_to chat_path
+    @message = Message.new(params[:message])
+
+    Pusher.trigger('chat', 'new_message', {
+      name: @message.name,
+      message: @message.message
+    }, {
+    socket_id: params[:socket_id]
+    })
+
+    respond_to :js
   end
 end
