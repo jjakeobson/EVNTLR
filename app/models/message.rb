@@ -1,4 +1,3 @@
-class Message
-  include ActiveModel::Model
-  attr_accessor :name, :message
+class Message < ActiveRecord::Base
+  belongs_to :user
 end
