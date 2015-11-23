@@ -7,10 +7,10 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
 
     Pusher.trigger('chat', 'new_message', {
-      name: @message.name,
+      name: current_user.name,
       message: @message.message
     }, {
-    socket_id: params[:socket_id]
+      socket_id: params[:socket_id]
     })
 
     respond_to :js
