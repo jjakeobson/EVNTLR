@@ -125,6 +125,11 @@ html, body {
   color: white;
   font-size: .5em;
 }
+
+.evicon>a:visited{
+  color: white !important;
+  text-decoration: none;
+}
 .evicon>a:hover{
   color: indigo !important;
   text-decoration: none;
