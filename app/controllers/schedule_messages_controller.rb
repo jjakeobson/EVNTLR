@@ -10,7 +10,7 @@ class ScheduleMessagesController < ApplicationController
 
     Pusher.trigger('schedule', 'new_schedule_message', {
       name: current_user.name,
-      schedulemessage: @schedulemessage.message
+      message: @schedulemessage.message
     }, {
       socket_id: params[:socket_id]
     })
@@ -25,6 +25,6 @@ class ScheduleMessagesController < ApplicationController
   end
 
   def schedule_message_params
-    params.require(:message).permit(:name, :message, :user_id)
+    params.require(:schedule_message).permit(:name, :message, :user_id)
   end
 end
