@@ -5,18 +5,14 @@ ruby '2.2.3'
 gem 'rails', '4.2.4'
 
 gem 'faker'
-
+gem 'pg'
 
 
 gem 'bcrypt'
 
 gem 'bootstrap-sass'
 
-group :production do
-  gem "rails_12factor"
-  gem 'pg'
-  gem 'puma'
-end
+
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -56,4 +52,10 @@ group :development do
   gem 'rails-erd'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do
+  gem "rails_12factor"
+  gem 'pg'
+  gem 'puma'
 end
