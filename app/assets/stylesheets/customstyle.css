@@ -120,17 +120,18 @@ html, body {
 }*/
 
 .navbar-fixed-bottom {
+  list-style: none;
   padding: 2vh 0;
   text-align: center;
   color: white;
   font-size: .5em;
 }
 
-.evicon>a:visited{
+.evicon i:visited{
   color: white !important;
   text-decoration: none;
 }
-.evicon>a:hover{
+.evicon i:hover{
   color: indigo !important;
   text-decoration: none;
 }

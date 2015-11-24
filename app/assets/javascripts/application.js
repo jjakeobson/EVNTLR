@@ -97,3 +97,7 @@ $(function() {
              el.val(el.attr('title'));
     });
  });
+
+$(function(){
+ $('.messages li:even').addClass('stripe');
+});
