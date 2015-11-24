@@ -3,6 +3,7 @@ $(function() {
 
   var pusher = new Pusher('9a29dc21625531215e18');
   var channel1 = pusher.subscribe('chat');
+  var schedulechannel = pusher.subscribe('schedule');
 
   pusher.connection.bind('connected', function() {
     var socket_id = pusher.connection.socket_id;
@@ -10,20 +11,17 @@ $(function() {
     $('#socket_id').val(socket_id);
   });
 
+  schedulechannel.bind('new_schedule_message', function (data) {
+
+    $('.schedule_messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
+  })
+
   channel1.bind('new_message', function (data) {
     // Code smell - Duplicated view
     // It's exactly app/views/chat_messages/_chat_message.html
-    appendItBruh;
 
     $('.messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
   });
-
-  //supposed to save history of messages
-  function appendItBruh() {
-    var whatever =   $('.messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
-  }
-
-  // document.write(whatever);
 
 
 });
