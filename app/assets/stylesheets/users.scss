@@ -1,3 +1,24 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.home-logo {
+  width : 40vh;
+  margin : 20vh auto;
+}
+
+.home-logo img {
+  width : 100%;
+}
+
+.allpages {
+  background-color: white;
+  height: 100%;
+}
+.message-frame{
+  padding: 20vh auto;
+  height: 100%;
+  text-align: center;
+}
+
+.check-in-form {
+  width : 40vh;
+  margin : 20vh auto;
+    text-align:center;
+}
