@@ -9,12 +9,15 @@
 
 .allpages {
   background-color: white;
-  height: 100%;
+  min-height: 800px;
+  background-repeat: repeat;
+  overflow-y: scroll;
 }
 .message-frame{
   padding: 20vh auto;
   height: 800px;
   text-align: center;
+  background-color: white;
 }
 
 .check-in-form {
