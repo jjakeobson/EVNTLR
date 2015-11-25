@@ -9,8 +9,9 @@
 
 .allpages {
   background-color: white;
-  height: 800px;
+  min-height: 800px;
   background-repeat: repeat;
+  overflow-y: scroll;
 }
 .message-frame{
   padding: 20vh auto;
