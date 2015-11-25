@@ -1,0 +1,34 @@
+<div class="container-fluid welcome-body">
+
+  <div class="row">
+    <div class="col-xs-12"></div>
+    <div class="home-logo">
+      <img src="/assets/brand-logo.png"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="check-in-form">
+        <%= form_for(:session, url: login_path) do |f| %>
+
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
+
+        <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>Remember me on this computer</span>
+        <% end %>
+
+        <%= f.submit "Log in", class: "btn btn-primary" %>
+        <% end %>
+
+        <p>New user?
+          <%= link_to "Sign up now!", new_user_path %></p>
+      </div>
+    </div>
+  </div>
+</div>
