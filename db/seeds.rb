@@ -3,7 +3,12 @@ User.create!(name:  "Jake Jacobson",
              password:              "qazqaz",
              password_confirmation: "qazqaz",
              admin: true)
-             
+
+User.create!(name:  "Alex Jacobson",
+            email: "alex@example.com",
+            password:              "qazqaz",
+            password_confirmation: "qazqaz")
+
 
 10.times do |n|
   name  = Faker::Name.name

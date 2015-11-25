@@ -1,7 +1,5 @@
 <li>
-  <% if current_user %>
-    You say <%= schedule_message.message %>
-  <% else %>
-    <%= schedule_message.name %> says <%= schedule_message.message %>
-  <% end %>
+  <br>
+  <b><%= current_user.name%></b><br>
+  <%= schedule_message.message %>
 </li>
