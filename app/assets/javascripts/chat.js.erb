@@ -15,12 +15,12 @@ $(function() {
     // It's exactly app/views/chat_messages/_chat_message.html
     appendItBruh;
 
-    $('.messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
+    $('.messages').append('<li>' + data.name + ' says ' + data.message + '</li>');
   });
 
   //supposed to save history of messages
   function appendItBruh() {
-    var whatever =   $('.messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
+    var whatever =   $('.messages').append('<li>' + data.name + ' says ' + data.message + '</li>');
   }
 
   // document.write(whatever);
