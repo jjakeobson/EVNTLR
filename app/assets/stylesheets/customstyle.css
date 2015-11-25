@@ -120,12 +120,14 @@ html, body {
 }*/
 
 .navbar-fixed-bottom {
+  list-style: none;
   padding: 2vh 0;
   text-align: center;
   color: white;
   font-size: .5em;
 }
 
+<<<<<<< HEAD
 .evicon>a:visited {
   color:white !important;
   text-decoration: none;
@@ -133,6 +135,13 @@ html, body {
 
 
 .evicon>a:hover{
+=======
+.evicon i:visited{
+  color: white !important;
+  text-decoration: none;
+}
+.evicon i:hover{
+>>>>>>> 52c569e0a2aee5d4e16edd779e5121f60ec266de
   color: indigo !important;
   text-decoration: none;
 }

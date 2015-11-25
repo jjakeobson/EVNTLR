@@ -2,18 +2,15 @@
   <div class="container-fluid">
     <div class='row'>
     <div class="col-xs-4 evicon">
-      <a href='#'> <!-- Profile Page Link -->
-     <span id='left'><i class="fa fa-4x fa-users"></i></span></a>
+     <li><%= link_to'<span><i class="fa fa-4x fa-users"></i></span>'.html_safe, users_path, method: "GET"%></li>
     </div>
 
     <div class="col-xs-4 evicon">
-      <a href='#'> <!-- List of Events -->
-      <span id='middle'><i class="fa fa-4x fa-list"></i></span></a>
+      <li><%= link_to'<span><i class="fa fa-4x fa-list"></i></span>'.html_safe, messages_path, method: "GET"%></li>
     </div>
 
     <div class="col-xs-4 evicon">
-      <a href='#'><!-- Chatting -->
-      <span id='right'><i class="fa fa-4x fa-commenting"></i></span></a>
+      <li><%= link_to'<span><i class="fa fa-4x fa-commenting"></i></span>'.html_safe, messages_path, method: "GET"%></li>
     </div>
 
 
