@@ -1,5 +1,5 @@
 $(function () {
-    var pusher = new Pusher('511393ecea7f7523b756');
+    var pusher = new Pusher('0cdf7561a0fb9a4dcab5');
     var channel1 = pusher.subscribe('chat');
     pusher.connection.bind('connected', function () {
         var socket_id = pusher.connection.socket_id;
