@@ -3,6 +3,7 @@ class ScheduleMessagesController < ApplicationController
 
   def index
     @schedulemessage = ScheduleMessage.new
+    @schedulemessages = ScheduleMessage.all
   end
 
   def create

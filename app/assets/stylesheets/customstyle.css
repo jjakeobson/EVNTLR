@@ -6,7 +6,7 @@
 html, body {
   margin:0;
   padding:0;
-  height:100%;
+  min-height: 100%;
 }
 html {
   margin: 0px;
@@ -140,7 +140,6 @@ body {
   font-size: .5em;
 }
 
-<<<<<<< HEAD
 .evicon>a:visited {
   color:white !important;
   text-decoration: none;
@@ -148,13 +147,6 @@ body {
 
 
 .evicon>a:hover{
-=======
-.evicon i:visited{
-  color: white !important;
-  text-decoration: none;
-}
-.evicon i:hover{
->>>>>>> 52c569e0a2aee5d4e16edd779e5121f60ec266de
   color: indigo !important;
   text-decoration: none;
 }

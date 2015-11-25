@@ -1,5 +1,6 @@
 <div class="container-fluid allpages">
   <div class="row">
+<<<<<<< HEAD
     <div class='col-xs-2'>
     <div class="col-xs-8 message-frame">
     <%= form_for @schedulemessage, remote: true do |f| %>
@@ -9,20 +10,43 @@
       <br>
       <br>
       <br>
+=======
+    <div class="col-xs-12 message-frame">
+>>>>>>> e90c34ce35070dd974b5bda0cb350a78e4402d5a
       <br>
       <br>
       <br>
 
-      <% if current_user.admin? %>
-        <%= f.text_area :message, rows: 2, cols: 40 %>
-        <br>
-        <%= f.submit 'Send' %>
+
+      <ul class="schedule_messages">
+      <% @schedulemessages.each do |content| %>
+        <li>
+          <hr>
+          <b><%= content.name%></b><br>
+          <%= content.message %>
+        </li>
       <% end %>
+      </ul>
+      <%= form_for @schedulemessage, remote: true do |f| %>
+        <div style="display:none">
+          <%= hidden_field_tag :socket_id %>
+        </div>
 
-    <% end %>
 
+<<<<<<< HEAD
     <ul class="schedule_messages"></ul>
     </div>
   </div>
 </div>
+=======
+        <% if current_user.admin? %>
+          <%= f.text_area :message, rows: 2, cols: 40 %>
+          <br>
+          <%= f.submit 'Send' %>
+          <% end %>
+
+      <% end %>
+    </div>
+  </div>
+>>>>>>> e90c34ce35070dd974b5bda0cb350a78e4402d5a
 </div>

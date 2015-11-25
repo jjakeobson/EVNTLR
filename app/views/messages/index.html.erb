@@ -1,6 +1,7 @@
 <div class="container-fluid allpages">
   <div class="row">
     <div class="col-xs-12 message-frame">
+<<<<<<< HEAD
     <%= form_for @message, layout: :inline, remote: true do |f| %>
     <div style="display:none">
       <%= hidden_field_tag :socket_id %>
@@ -20,8 +21,30 @@
     <% end %>
   </span>
   </div>
+=======
+      <%= form_for @message, remote: true do |f| %>
+        <div style="display:none">
+          <%= hidden_field_tag :socket_id %>
+        </div>
+        <br><br><br><br><br><br><br><br>
 
-    <ul class="messages"></ul>
-  </div>
+
+>>>>>>> e90c34ce35070dd974b5bda0cb350a78e4402d5a
+
+
+      <ul class="messages">
+      <% @messages.each do |content| %>
+        <li>
+          <hr>
+          <b><%= content.name%></b><br>
+          <%= content.message %>
+        </li>
+      <% end %>
+      </ul>
+      <%= f.text_area :message, rows: 2, cols: 40 %>
+      <br>
+      <%= f.submit 'Send' %>
+        <% end %>
+    </div>
   </div>
 </div>
