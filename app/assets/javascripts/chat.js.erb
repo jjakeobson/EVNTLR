@@ -1,8 +1,13 @@
 $(function() {
 
+  //use for production
+  //var pusher = new Pusher('0cdf7561a0fb9a4dcab5');
 
+  //use for local host
   var pusher = new Pusher('9a29dc21625531215e18');
+
   var channel1 = pusher.subscribe('chat');
+  var schedulechannel = pusher.subscribe('schedule');
 
   pusher.connection.bind('connected', function() {
     var socket_id = pusher.connection.socket_id;
@@ -10,14 +15,20 @@ $(function() {
     $('#socket_id').val(socket_id);
   });
 
-  channel1.bind('new_message', function (data) {
-    // Code smell - Duplicated view
-    // It's exactly app/views/chat_messages/_chat_message.html
-    
-
-    $('.messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
+  schedulechannel.bind('new_schedule_message', function (data) {
+    appendToScheduleMessages(data);
   });
 
+  channel1.bind('new_message', function (data) {
+    appendToMessages(data);
+  });
 
+  function appendToMessages(data) {
+    $('.messages').append('<hr><li><b>' + data.name + '</b><br> ' + data.message + '</li>');
+  }
+
+  function appendToScheduleMessages(data) {
+    $('.schedule_messages').append('<hr><li><b>' + data.name + '</b><br> ' + data.message + '</li>');
+  }
 
 });
