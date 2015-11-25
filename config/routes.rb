@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root 'welcome#index'
-
+  get 'welcome/test'
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
