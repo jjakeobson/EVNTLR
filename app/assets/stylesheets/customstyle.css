@@ -62,15 +62,7 @@ html, body {
   height: 50px;
   width: 100%;
 }
-.evmain-body{
-    background: url('/assets/miamipurple.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #cc99ff;
-    text-shadow: 2px 2px 6px #000000;
-}
+
 
 #w #navmenu ul {
   list-style: none;
