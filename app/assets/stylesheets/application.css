@@ -31,6 +31,7 @@
   color: #6441A5;
   background-color: #6441A5;
 }
+
 span>.fa-bars {
   padding-top: 1vh;
   color: white;
@@ -40,6 +41,7 @@ span>.fa-bars {
 span>.fa-bars:hover {
   color: indigo;
 }
+
 .logo {
   margin-left: 10em;
   margin-top: 18px;

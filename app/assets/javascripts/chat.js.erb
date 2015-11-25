@@ -13,17 +13,11 @@ $(function() {
   channel1.bind('new_message', function (data) {
     // Code smell - Duplicated view
     // It's exactly app/views/chat_messages/_chat_message.html
-    appendItBruh;
+    
 
     $('.messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
   });
 
-  //supposed to save history of messages
-  function appendItBruh() {
-    var whatever =   $('.messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
-  }
-
-  // document.write(whatever);
 
 
 });
