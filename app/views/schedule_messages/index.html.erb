@@ -1,28 +1,22 @@
 <div class="container-fluid allpages">
   <div class="row">
     <div class="col-xs-12 message-frame">
+
       <%= form_for @schedulemessage, remote: true do |f| %>
         <div style="display:none">
           <%= hidden_field_tag :socket_id %>
         </div>
         <br><br><br><br><br><br><br><br>
+
         <%= f.text_area :message, rows: 2, cols: 40 %>
         <br>
         <%= f.submit 'Send' %>
           <% end %>
 
-
-
       <ul class="schedule_messages">
-      <!-- <%# @schedulemessages.each do |content| %>
-        <li>
-          <hr>
-          <b><%# content.name%></b><br>
-          <%# content.message %>
-        </li>
-      <%# end %> -->
       </ul>
 
     </div>
   </div>
+
 </div>
