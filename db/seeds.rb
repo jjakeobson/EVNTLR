@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 User.create!(name:  "Jake Jacobson",
              email: "jake@example.com",
              password:              "qazqaz",
