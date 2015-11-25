@@ -2,4 +2,4 @@
 $('#message_message').val('');
 
 // show the message in the messages area
-$('.messages').prepend('<%= escape_javascript(render @message) %>');
+$('.messages').append('<%= escape_javascript(render @message) %>');

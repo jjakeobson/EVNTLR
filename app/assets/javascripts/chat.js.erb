@@ -13,14 +13,14 @@ $(function() {
 
   schedulechannel.bind('new_schedule_message', function (data) {
 
-    $('.schedule_messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
+    $('.schedule_messages').append('<li>' + data.name + ' says ' + data.message + '</li>');
   })
 
   channel1.bind('new_message', function (data) {
     // Code smell - Duplicated view
     // It's exactly app/views/chat_messages/_chat_message.html
 
-    $('.messages').prepend('<li>' + data.name + ' says ' + data.message + '</li>');
+    $('.messages').append('<li>' + data.name + ' says ' + data.message + '</li>');
   });
 
 
