@@ -1,7 +1,7 @@
 <div class="container-fluid allpages">
   <div class="row">
     <div class="col-xs-12 message-frame">
-    <%= form_for @message, remote: true do |f| %>
+    <%= form_for @message, layout: :inline, remote: true do |f| %>
     <div style="display:none">
       <%= hidden_field_tag :socket_id %>
     </div>
@@ -13,11 +13,14 @@
     <br>
 
       <!-- <%= f.label :message %> -->
-      <%= f.text_area :message, rows: 2, cols: 40 %>
-  <br>
-      <%= f.submit 'Send' %>
+      <div class='input-group'>
 
+      <%= f.text_area :message, rows: 2, cols: 40 %>
+      <span class='input-group-btn'>
+      <%= f.submit 'Send' %>
     <% end %>
+  </span>
+  </div>
 
     <ul class="messages"></ul>
   </div>

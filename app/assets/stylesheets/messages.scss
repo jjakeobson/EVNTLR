@@ -2,18 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-<<<<<<< HEAD
-ul.messages {
-=======
-.messages li {
->>>>>>> 52c569e0a2aee5d4e16edd779e5121f60ec266de
+.messages {
+  display: block;
+  width: 90%;
+  color: #003333;
+  position: relative;
+  background-image: linear-gradient(0deg, rgba(104,158,158,1.00) 0%, rgba(135,205,205,1.00) 100%);
+
+}
+main {
+  width: 80%;
+  max-width: 500px;
+  margin: 10px auto;
+}
+.chat, .messages {
+  background-color: #6441A5;
+  border-radius: 10px;
+
+  overflow: auto;
+}
+
+.chat {
+  height: 400px;
+}
+
+ul {
   list-style: none;
-  color: indigo;
-  text-align: left;
 }
-<<<<<<< HEAD
-=======
-li.stripe{
-  background-color: lavender;
-}
->>>>>>> 52c569e0a2aee5d4e16edd779e5121f60ec266de

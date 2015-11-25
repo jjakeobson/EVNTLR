@@ -11,6 +11,7 @@ gem 'pg'
 gem 'bcrypt'
 
 gem 'bootstrap-sass'
+gem 'bootstrap_form'
 
 
 
