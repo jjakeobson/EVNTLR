@@ -1,6 +1,6 @@
 html, body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   min-height: 100%;
 }
 #w #pagebody {
@@ -8,7 +8,8 @@ html, body {
   left: 0;
   z-index: 99999;
 }
-#toolbarnav{
+
+#toolbarnav {
   background-color: #6441A5;
 }
 
@@ -16,7 +17,7 @@ html, body {
   width: 150px;
   margin: 1vh auto;
 }
-#logo img{
+#logo img {
   width: 100%;
 }
 
@@ -54,14 +55,14 @@ span>.fa-bars {
 span>.fa-bars:hover {
   color: indigo;
 }
-.evmain-body{
-    background: url('/assets/miamipurple.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #cc99ff;
-    text-shadow: 2px 2px 6px #000000;
+.evmain-body {
+  background: url('/assets/miamipurple.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #cc99ff;
+  text-shadow: 2px 2px 6px #000000;
 }
 #w #navmenu {
   background: #cc99ff;
@@ -93,26 +94,24 @@ span>.fa-bars:hover {
   font-size: 1.2em;
   text-decoration: none;
 }
+
 #w #navmenu ul li a:hover {
   color: #cc99ff;
   text-decoration: none;
 }
 
-
 .navbar a {
   color: white;
   font-size: 1em;
-  background-color: #6441A5;
   font-weight: bold;
 }
+
 .navbar {
   background-color: #6441A5;
 }
 .navbar a:hover {
   color: #6441A5;
-  background-color: #6441A5;
 }
-
 
 .navbar-fixed-bottom {
   padding: 2vh 0;
@@ -120,14 +119,11 @@ span>.fa-bars:hover {
   color: white;
   font-size: .5em;
 }
-
 .evicon>a:visited {
-  color:white !important;
+  color: white !important;
   text-decoration: none;
 }
-
-
-.evicon>a:hover{
+.evicon>a:hover {
   color: indigo !important;
   text-decoration: none;
 }
