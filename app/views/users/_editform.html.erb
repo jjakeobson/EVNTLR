@@ -1,0 +1,24 @@
+<%= form_for(@user) do |f| %>
+<%= render 'shared/error_messages', object: @user %>
+
+<%= f.label :name %>
+<%= f.text_field :name, class: 'form-control' %>
+
+<%= f.label :email %>
+<%= f.email_field :email, class: 'form-control' %>
+<br>
+<b>OPTIONAL INFORMATION:</b>
+<br>
+<br>
+
+<%= f.label :herefor, 'Reason for attending: (Student, Business, Family, Friend)' %>
+<%= f.text_field :herefor, class: 'form-control' %>
+
+<%= f.label :githublink, 'GitHub Username: (ONLY Username)' %>
+<%= f.text_field :githublink, class: 'form-control' %>
+
+<%= f.label :portfoliolink, 'Portfolio:' %>
+<%= f.text_field :portfoliolink, class: 'form-control' %>
+
+<%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
