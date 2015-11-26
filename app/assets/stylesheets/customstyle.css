@@ -19,17 +19,7 @@ html, body {
 #logo img{
   width: 100%;
 }
-#w #navmenu {
-  background: #cc99ff;
-  height: 100%;
-  display: block;
-  position: fixed;
-  width: 200px;
-  left: 0px;
-  top: 0px;
-  z-index: 0;
-  color: white;
-}
+
 #w #pagebody #content {
   height: 100%;
   z-index: 9999;
@@ -55,6 +45,15 @@ html, body {
   height: 50px;
   width: 100%;
 }
+span>.fa-bars {
+  padding-top: 1vh;
+  color: white;
+  float: left;
+  font-size: 2.5em;
+}
+span>.fa-bars:hover {
+  color: indigo;
+}
 .evmain-body{
     background: url('/assets/miamipurple.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -64,7 +63,17 @@ html, body {
     color: #cc99ff;
     text-shadow: 2px 2px 6px #000000;
 }
-
+#w #navmenu {
+  background: #cc99ff;
+  height: 100%;
+  display: block;
+  position: fixed;
+  width: 200px;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  color: white;
+}
 #w #navmenu ul {
   list-style: none;
   background: indigo;
@@ -89,6 +98,22 @@ html, body {
   text-decoration: none;
 }
 
+
+.navbar a {
+  color: white;
+  font-size: 1em;
+  background-color: #6441A5;
+  font-weight: bold;
+}
+.navbar {
+  background-color: #6441A5;
+}
+.navbar a:hover {
+  color: #6441A5;
+  background-color: #6441A5;
+}
+
+
 .navbar-fixed-bottom {
   padding: 2vh 0;
   text-align: center;
@@ -105,9 +130,4 @@ html, body {
 .evicon>a:hover{
   color: indigo !important;
   text-decoration: none;
-}
-
-.fname {
-  width: 200px;
-  height: px;
 }
