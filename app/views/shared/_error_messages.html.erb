@@ -1,13 +1,24 @@
-<% if @user.errors.any? %>
-<div id="error_explanation">
-  <div class="alert alert-danger">
-    The form contains
-    <%= pluralize(@user.errors.count, "error") %>.
+<% provide(:title, 'error') %>
+<div class="container-fluid allpages">
+  <div class="row">
+    <div class="col-xs-2 message-frame"></div>
+    <div class="col-xs-8 message-frame">
+        <!-- Change Title -->
+      <h2 class="below_nav"> Sorry about Inconvenience!</h2>
+      <% if @user.errors.any? %>
+      <div id="error_explanation">
+        <div class="alert alert-danger">
+          The form contains
+          <%= pluralize(@user.errors.count, "error") %>.
+        </div>
+        <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+      <% end %>
+    </div>
+    <div class="col-xs-2 message-frame"></div>
   </div>
-  <ul>
-    <% @user.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-    <% end %>
-  </ul>
 </div>
-<% end %>
