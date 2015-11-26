@@ -9,7 +9,6 @@
 <br>
 <b>OPTIONAL INFORMATION:</b>
 <br>
-<br>
 
 <%= f.label :herefor, 'Reason for attending: (Student, Business, Family, Friend)' %>
 <%= f.text_field :herefor, class: 'form-control' %>
@@ -19,6 +18,6 @@
 
 <%= f.label :portfoliolink, 'Portfolio:' %>
 <%= f.text_field :portfoliolink, class: 'form-control' %>
-
+<br>
 <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
