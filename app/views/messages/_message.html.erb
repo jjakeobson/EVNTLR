@@ -1,7 +1,5 @@
+<hr>
 <li>
-  <% if current_user %>
-    You say <%= message.message %>
-  <% else %>
-    <%= message.name %> says <%= message.message %>
-  <% end %>
+<b><%= current_user.name%></b><br>
+<%= message.message %>
 </li>

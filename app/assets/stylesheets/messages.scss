@@ -1,12 +1,19 @@
-// Place all the styles related to the Messages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
-.messages li {
+ul {
   list-style: none;
-  color: indigo;
-  text-align: left;
 }
-li.stripe{
-  background-color: lavender;
+
+li {
+  list-style: none;
+}
+#set-messages {
+  display: inline;
+  width: 30px;
+}
+
+.input-group {
+  display: inline-block;
+  width: 30px;
+  margin-top: 400px;
+  margin-bottom: 40px;
 }

@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   resources :messages
   resources :users
+  resources :schedule_messages
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,8 +1,10 @@
-<% provide(:title, 'Edit user') %>
+<% provide(:title, 'Edit Profile') %>
 <% provide(:button_text, 'Save changes') %>
-<h1>Update your profile</h1>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= render 'form' %>
+<div class="container-fluid allpages">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2 message-frame">
+      <h2 class="below_nav">Update your profile</h2>
+      <%= render 'editform' %>
+    </div>
   </div>
 </div>
