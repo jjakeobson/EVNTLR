@@ -16,3 +16,8 @@
 
 @import"bootstrap-sprockets";
 @import"bootstrap";
+
+textarea#message_message {
+  width: 57vw !important;
+  height: 20vh !important;
+}
