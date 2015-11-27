@@ -2,17 +2,20 @@
 <div class="container-fluid allpages">
 
   <div class="row">
-    <div class="col-xs-12 message-frame">
+    <div class="col-xs-8 col-xs-offset-2 message-frame">
       <section class="user_info">
         <br>
         <br><br><br><br>
+        <div class='profilepic'>
+          <!-- This is where profile pic will go -->
+        </div>
         <h1>
           <%= @user.name %>
         </h1>
 
-        <div>
-          Reason for attending:
-          <%= @user.herefor %><br>
+        <table class='table table-striped'>
+          <tr>Reason for attending:
+          <%= @user.herefor %><br></tr>
           Email:
           <%= @user.email %><br>
           Github Profile:
@@ -21,6 +24,7 @@
           <a href="https://<%= @user.portfoliolink %>"><%= @user.portfoliolink %></a><br>
         </div>
         <%= link_to "Edit", edit_user_path, class: "navlink", method: :get%>
+      </table>
       </section>
     </div>
   </div>
