@@ -1,8 +1,9 @@
 <% provide(:title, 'EVNT Buzz!') %>
 <div class="container-fluid allpages">
-  <div class="row">
+  <div class="row page-deco">
     <div class="col-xs-8 col-xs-offset-2 message-frame">
-      <h3 class="below_nav">Hear me out!</h3>
+      <h3 class="below_nav">Help me!</h3>
+      <h3 >I am inside a box!</h3>
       <%= form_for @message, layout: :inline, remote: true do |f| %>
       <div style="display:none">
         <%= hidden_field_tag :socket_id %>
@@ -11,11 +12,15 @@
 
         <ul class="messages"></ul>
       </section>
-      <br><br>
-      <div class='input-group'>
-        <%= f.text_area :message, rows: 2, cols: 40 %>
-        <%= f.submit 'Send' %>
-        <% end %>
+      <div class='row input-group'>
+        <div class="col-xs-7">
+          <%= f.text_area :message, cols: 30%><!--, cols: 20 -->
+        </div>
+          <div class="col-xs-2">
+            <%= f.submit 'Send', class: "btn send-btn"  %>
+            <% end %>
+          </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>

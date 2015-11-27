@@ -29,7 +29,11 @@ ul.users {
 
 .input-group {
   display: inline-block;
-  width: 30px;
-  margin-top: 100%;
-  margin-bottom: 40px;
+  margin-top: 50vh;
+  margin-bottom: 10vh;
+  width: 100vw !important;
+}
+textarea#message_message {
+  width: 50vw !important;
+  height: 8vh !important;
 }
