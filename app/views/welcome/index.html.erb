@@ -1,23 +1,17 @@
 <% provide(:button_text, 'Sign up') %>
 
 <div class="container-fluid welcome-body">
-
   <div class="row">
-    <div class="col-xs-12"></div>
+    <div class="col-xs-8 col-xs-offset-2"></div>
     <div class="home-logo">
       <img src="/assets/brand-logo.png"/>
     </div>
   </div>
-
   <div class="row">
     <div class="col-xs-12">
       <div class="check-in-form">
-
         <%= render 'users/form', :@user => User.new %>
-
-
-        <p>Already Signed up?</p>
-          <p><%= link_to "Check in please", login_path%></p>
+        <%= button_to "Check in", login_path, class: "btn checkin"%>
       </div>
     </div>
   </div>

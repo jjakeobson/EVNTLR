@@ -129,10 +129,12 @@ span>.fa-bars:hover {
   color: indigo !important;
   text-decoration: none;
 }
-
-
 .checkin {
   color: white;
   background-color: #6441A5;
   border-radius: 0px !important;
+  margin: 2vh 0;
+}
+.form-control {
+  margin: 2vh 0;
 }
