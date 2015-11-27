@@ -135,6 +135,13 @@ span>.fa-bars:hover {
   border-radius: 0px !important;
   margin: 2vh 0;
 }
+.send-btn {
+  color: white;
+  background-color: #6441A5;
+  border-radius: 0px !important;
+  width: 10vw;
+  height: 8vh;
+}
 .form-control {
   margin: 2vh 0;
 }

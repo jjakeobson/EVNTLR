@@ -6,6 +6,22 @@ ul {
 li {
   list-style: none;
 }
+
+ul.users {
+  padding-left: 0px;
+}
+
+.users a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #6441A5;
+}
+
+.users a:hover {
+  text-decoration: none;
+  color: indigo;
+}
+
 #set-messages {
   display: inline;
   width: 30px;
@@ -13,7 +29,11 @@ li {
 
 .input-group {
   display: inline-block;
-  width: 30px;
-  margin-top: 400px;
-  margin-bottom: 40px;
+  margin-top: 50vh;
+  margin-bottom: 10vh;
+  width: 100vw !important;
+}
+textarea#message_message {
+  width: 50vw !important;
+  height: 8vh !important;
 }
