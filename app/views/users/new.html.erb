@@ -1,23 +1,10 @@
 <% provide(:title, 'Sign up') %>
-<% provide(:button_text, 'Create my account') %>
-
-<div class="container-fluid evmain-body">
-
+<% provide(:button_text, 'Check In !') %>
+<div class="container-fluid allpages">
   <div class="row">
-    <div class="col-xs-12"></div>
-    <div class="home-logo">
-      <img src="/assets/brand-logo.png"/>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12"></div>
-    <div class="check-in-form">
-      <input class='fname' name="firstname" type="text" value="firstname">
-      <br><br>
-      <input class='lname' name="lastname" type="text" value="lastname">
-      <br><br>
-      <input class='checkin' type="submit" value="Check-in">
+    <div class="col-xs-8 col-xs-offset-2 message-frame">
+      <h2 class="below_nav">Sign up</h2>
+      <%= render 'form' %>
     </div>
   </div>
 </div>
