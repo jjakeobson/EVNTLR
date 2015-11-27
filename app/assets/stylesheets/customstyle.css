@@ -112,7 +112,7 @@ span>.fa-bars:hover {
   background-color: #6441A5;
 }
 .navbar a:hover {
-  color: #6441A5;
+  color: indigo;
 }
 
 .navbar-fixed-bottom {
@@ -125,10 +125,10 @@ span>.fa-bars:hover {
   color: white !important;
   text-decoration: none;
 }
-.evicon>a:hover {
+/*.evicon>a:hover {
   color: indigo !important;
   text-decoration: none;
-}
+}*/
 .checkin {
   color: white;
   background-color: #6441A5;
