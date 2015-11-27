@@ -1,6 +1,11 @@
-<% provide(:title, 'All users') %>
-<h1>All users</h1>
-
-<ul class="users">
-  <%= render @users %>
-</ul>
+<% provide(:title, 'EVNTLR Attendees') %>
+<div class="container-fluid allpages">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2 message-frame">
+      <h2 class="below_nav">Tonight's Attendees</h2>
+      <ul class="users">
+        <%= render @users %>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -10,17 +10,16 @@ class ScheduleMessagesController < ApplicationController
     @schedulemessage = ScheduleMessage.new(schedule_message_params)
 
     Pusher.trigger('schedule', 'new_schedule_message', {
-      name: current_user.name,
-      message: @schedulemessage.message
-    }, {
-      socket_id: params[:socket_id]
-    })
+                     name: current_user.name,
+                     message: @schedulemessage.message
+                   }, socket_id: params[:socket_id])
 
     respond_to :js
     @schedulemessage.save
   end
 
   private
+
   def set_schedule_message
     @schedulemessage = ScheduleMessage.find(params[:id])
   end
