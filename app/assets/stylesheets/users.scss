@@ -4,13 +4,27 @@
   min-height: 900px;
   background-repeat: repeat;
   overflow-y: scroll;
+
+}
+.page-deco {
+  background: url('/assets/balloon.jpg') no-repeat center center fixed;
+  background-size: 100% 100%;
 }
 .message-frame{
   padding: 20vh auto;
   height: 700px;
   text-align: center;
   background-color: white;
+  background-size: 100% 100%;
+  opacity: 0.3;
 }
 .below_nav {
   margin-top: 10vh;
 }
+// .message-frame {
+//   background: url('/assets/balloon.jpg') no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
