@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'figaro'
+
+gem 'fog'
+
 gem 'pusher'
 
 gem 'mini_magick'
