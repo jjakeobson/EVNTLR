@@ -2,8 +2,11 @@ source 'https://rubygems.org'
 
 gem 'pusher'
 
+gem 'mini_magick'
+
 ruby '2.2.3'
 
+gem 'carrierwave'
 
 gem 'rails', '4.2.4'
 

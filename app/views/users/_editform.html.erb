@@ -1,4 +1,4 @@
-<%= form_for(@user) do |f| %>
+<%= form_for @user, :html => { :multipart => true } do |f| %>
 <%= render 'shared/error_messages', object: @user %>
 
 <!-- <%= f.label :name %> -->
@@ -9,6 +9,9 @@
 <br>
 <b>OPTIONAL INFORMATION:</b>
 <br>
+
+<%= f.label :avatar %>
+<%= f.file_field :avatar %>
 
 <!-- <%= f.label :herefor, 'Reason for attending: (Student, Business, Family, Friend)' %> -->
 <%= f.text_field :herefor, class: 'form-control', placeholder: "Reason for attending: (Student, Business, Family, Friend)" %>
