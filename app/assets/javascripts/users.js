@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).on("ready page:load", function () {
     var pagebody = $("#pagebody");
     var themenu = $("#navmenu");
     var topbar = $("#toolbarnav");
@@ -7,9 +7,20 @@ $(document).ready(function () {
         width: $(window).width(),
         height: $(window).height()
     };
+
+    $('#message_message').focus(function() {
+      console.log('Success');
+      // alert('say something');
+      $('#footer-navbar').hide();
+    });
+    $('#message_message').blur(function() {
+      console.log('Success');
+      // alert('say something');
+      $('#footer-navbar').show();
+    });
+
     // retrieve variables as
     // viewport.width / viewport.height
-
     function openMe() {
         $(function () {
             topbar.animate({
@@ -46,7 +57,7 @@ $(document).ready(function () {
 
 
     // checking whether to open or close nav menu
-    $("#menu-btn").live("click", function (e) {
+    $("#menu-btn").on("click", function (e) {
         e.preventDefault();
         var leftval = pagebody.css('left');
 
@@ -57,13 +68,11 @@ $(document).ready(function () {
         }
     });
 
-    // loading page content for navigation
-    $("a.navlink").live("click", function (e) {
+    $("a.navlink").on("click", function (e) {
         e.preventDefault();
         var linkurl = $(this).attr("href");
         var linkhtmlurl = linkurl.substring(1, linkurl.length);
 
-        var imgloader = '<center style="margin-top: 30px;"><img src="img/preloader.gif" alt="loading..." /></center>';
 
         closeMe();
 
@@ -72,12 +81,6 @@ $(document).ready(function () {
             window.scrollTo(0, 1);
         });
 
-        content.html(imgloader);
-
-        setTimeout(function () {
-            content.load(linkhtmlurl, function () {});
-                               }, 1200
-                  );
     });
 });
 

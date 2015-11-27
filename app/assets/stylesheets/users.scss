@@ -1,27 +1,75 @@
-.home-logo {
-  width : 40vh;
-  margin : 20vh auto;
-}
-
-.home-logo img {
-  width : 100%;
-}
 
 .allpages {
   background-color: white;
-  min-height: 900px;
+  // min-height: 900px;
   background-repeat: repeat;
   overflow-y: scroll;
+
 }
+// .page-deco {
+//   background: url('/assets/balloon.jpg') no-repeat center center fixed;
+//   background-size: 100% 100%;
+// }
+// div::after { <-- add this to page-deco
+//   content: "";
+//   background: url(image.jpg);
+//   opacity: 0.5;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1;
+// }
 .message-frame{
   padding: 20vh auto;
   height: 700px;
   text-align: center;
   background-color: white;
+  // background-size: 100% 100%;
+  // opacity: 0.3;
+}
+.below_nav {
+  margin-top: 10vh;
+  font-size: 2.2em;
 }
 
-.check-in-form {
-  width : 40vh;
-  margin : 20vh auto;
-    text-align:center;
+ul.users {
+  padding-left: 0px;
+  margin: 1em 0;
+  width: 100%;
+
 }
+
+.users li {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding: 10px 10px 10px 20px;
+  text-align: left;
+  list-style-image: url('default-user.png');
+  background-color: #6441A5;
+  list-style-position: inside;
+
+}
+
+.users a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+
+  margin: 0;
+}
+
+.users a:hover {
+  text-decoration: none;
+  color: indigo;
+
+}
+// .message-frame {
+//   background: url('/assets/balloon.jpg') no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }

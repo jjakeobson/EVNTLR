@@ -1,0 +1,27 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome-body{
+    background: url('/assets/MiamiPurple852.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #cc99ff;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.home-logo {
+  width : 40vw;
+  margin : 20vh auto 10vh auto;
+}
+
+.home-logo img {
+  width : 100%;
+}
+
+.check-in-form {
+  width : 40vw;
+  margin : 10vh auto;
+    text-align:center;
+}

@@ -16,33 +16,3 @@
 
 @import"bootstrap-sprockets";
 @import"bootstrap";
-
-
-.navbar a {
-  color: white;
-  font-size: 1em;
-  background-color: #6441A5;
-  font-weight: bold;
-}
-.navbar {
-  background-color: #6441A5;
-}
-.navbar a:hover {
-  color: #6441A5;
-  background-color: #6441A5;
-}
-
-span>.fa-bars {
-  padding-top: 1vh;
-  color: white;
-  float: left;
-  font-size: 2.5em;
-}
-span>.fa-bars:hover {
-  color: indigo;
-}
-
-.logo {
-  margin-left: 10em;
-  margin-top: 18px;
-}

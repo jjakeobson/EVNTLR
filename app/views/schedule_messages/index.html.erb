@@ -1,22 +1,21 @@
+
+<% provide(:title, 'Wyncode FLL CO3 Pitch Night') %>
+
 <div class="container-fluid allpages">
   <div class="row">
-    <div class="col-xs-12 message-frame">
-
-      <%= form_for @schedulemessage, remote: true do |f| %>
-        <div style="display:none">
-          <%= hidden_field_tag :socket_id %>
-        </div>
-        <br><br><br><br><br><br><br><br>
-
-        <%= f.text_area :message, rows: 2, cols: 40 %>
-        <br>
-        <%= f.submit 'Send' %>
-          <% end %>
-
-      <ul class="schedule_messages">
-      </ul>
-
+    <div class="col-xs-8 col-xs-offset-2 message-frame">
+      <h3 class="below_nav">Welcome to Wyncode FLL CO3 Pitch Night</h3>
+      <h4>Here are the scheduled Events Tonight</h4>
+            <%= form_for @schedulemessage, remote: true do |f| %>
+      <div style="display:none">
+        <%= hidden_field_tag :socket_id %>
+      </div>
+      <br><br><br>
+      <%= f.text_area :message, rows: 2, cols: 40 %>
+      <br>
+      <%= f.submit 'Send' %>
+      <% end %>
+      <ul class="schedule_messages"></ul>
     </div>
   </div>
-
 </div>

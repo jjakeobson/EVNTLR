@@ -1,11 +1,4 @@
-// Place all the styles related to the Messages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-// div.input-group {
-//   position: absolute;
-//   margin-top: 300px;
-// }
-//
+
 ul {
   list-style: none;
 }
@@ -13,16 +6,34 @@ ul {
 li {
   list-style: none;
 }
-//
+
+ul.users {
+  padding-left: 0px;
+}
+
+.users a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #6441A5;
+}
+
+.users a:hover {
+  text-decoration: none;
+  color: indigo;
+}
+
 #set-messages {
   display: inline;
-  // overflow-x: hidden;
   width: 30px;
 }
 
 .input-group {
   display: inline-block;
-  width: 30px;
-  margin-top: 400px;
-  margin-bottom: 40px;
+  margin-top: 50vh;
+  margin-bottom: 10vh;
+  width: 100vw !important;
+}
+textarea#message_message {
+  width: 50vw !important;
+  height: 8vh !important;
 }
