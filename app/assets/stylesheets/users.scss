@@ -5,6 +5,12 @@
   background-repeat: repeat;
   overflow-y: scroll;
 }
+// li{
+//   background-color: yellow;
+// }
+.attendees li:nth-child(even){
+  background-color: lavender;
+}
 
 
 
@@ -49,7 +55,7 @@ ul.users {
   padding: 10px 10px 10px 20px;
   text-align: left;
   // list-style-image: url(':large_avatar');
-  background-color: #6441A5;
+  background-color: D0a9f5;
   list-style-position: inside;
 
 }
