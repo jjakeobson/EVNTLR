@@ -28,7 +28,7 @@ $(function() {
   }
 
   function appendToScheduleMessages(data) {
-    $('.schedule_messages').append('<hr><li><b>' + data.name + '</b><br> ' + data.message + '</li>');
+    $('.schedule_messages').append('<hr><li><b><img src=' + data.avatar +'>' + data.name + '</b><br> ' + data.message + '</li>');
   }
 
 });
