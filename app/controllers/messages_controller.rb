@@ -10,6 +10,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     Pusher.trigger('chat', 'new_message', {
+                     avatar: current_user.avatar_url(:thumb),
                      name: current_user.name,
                      message: @message.message
                    }, socket_id: params[:socket_id])

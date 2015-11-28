@@ -1,5 +1,7 @@
 <hr>
 <li>
+<%= image_tag(current_user.avatar_url(:thumb))%>
+
 <b><%= current_user.name%></b><br>
 <%= message.message %>
 </li>
