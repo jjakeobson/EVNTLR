@@ -80,3 +80,27 @@ ul.users {
 //   -o-background-size: cover;
 //   background-size: cover;
 // }
+
+.table {
+  text-align: left;
+  width: 100px;
+  background-color: #6441A5;
+  padding: 20px 5px 1px 1px;
+
+}
+
+td a {
+  color: white;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+td {
+  color: white;
+  font-size: 1em;
+
+}
+
+tr td {
+  padding: 5px 5px 1px 1px;
+}
