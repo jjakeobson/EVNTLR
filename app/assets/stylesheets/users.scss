@@ -71,7 +71,7 @@ ul.users {
   height: 15em;
   margin:auto;
   border: solid #6441A5;
-  // border-radius: 150px
+  border-radius: 5px;
 }
 // .message-frame {
 //   background: url('/assets/balloon.jpg') no-repeat center center fixed;
@@ -83,9 +83,10 @@ ul.users {
 
 .table {
   text-align: left;
-  width: 100px;
+  width: 100%;
   background-color: #6441A5;
-  padding: 20px 5px 1px 1px;
+  border-radius: 5px;
+
 
 }
 
@@ -98,9 +99,10 @@ td a {
 td {
   color: white;
   font-size: 1em;
+  padding: 15px;
 
 }
 
-tr td {
-  padding: 5px 5px 1px 1px;
-}
+// tr td {
+//   padding: 5px 5px 1px 1px;
+// }
