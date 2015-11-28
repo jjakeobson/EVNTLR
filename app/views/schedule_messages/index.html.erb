@@ -1,22 +1,32 @@
 <% provide(:title, 'Wyncode FLL CO3 Pitch Night') %>
-
 <div class="container-fluid allpages">
-  <div class="row">
-    <div class="col-xs-8 col-xs-offset-2 message-frame">
+  <div class="row page-deco">
+    <div class="col-xs-12 message-frame">
       <h3 class="below_nav">Welcome to Wyncode FLL CO3 Pitch Night</h3>
-      <h4>Here are the scheduled Events Tonight</h4>
-            <%= form_for @schedulemessage, remote: true do |f| %>
-      <div style="display:none">
-        <%= hidden_field_tag :socket_id %>
-      </div>
-      <br><br><br>
-      <% if current_user.admin? %>
-        <%= f.text_area :message, rows: 2, cols: 40 %>
-        <br>
-        <%= f.submit 'Send' %>
+      <h4>Here are the scheduled Events Tonight</h3>
+      <%= form_for @schedulemessage, layout: :inline, remote: true do |f| %>
+        <div style="display:none">
+          <%= hidden_field_tag :socket_id %>
+        </div>
+        <section id='set-messages'>
+          <ul class="schedule_messages">
+            <li>
+            <br>
+          </ul>
+        </section>
+        <% if current_user.admin? %>
+          <div class='row text_group'>
+            <div class="col-xs-9">
+              <%= f.text_area :message, placeholder: "Type your messages here"%><!--, cols: 20 -->
+            </div>
+            <div class="col-xs-3">
+              <button type="submit" class="btn send-btn">
+                <i class="fa fa-commenting"></i>
+              </button>
+            </div>
+          </div>
+        <% end %>
       <% end %>
-      <% end %>
-      <ul class="schedule_messages"></ul>
     </div>
   </div>
 </div>
