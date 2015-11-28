@@ -1,6 +1,7 @@
 <li>
 <%= image_tag(user.avatar_url(:small_avatar), :size => '50x50')%>&nbsp;&nbsp;&nbsp;
-<%= link_to user.name, user %>
+<%= link_to user.name, user %><br>
+<%= user.herefor %>
 <div class='checkbox'>
   <label>
     <input type='checkbox'>
