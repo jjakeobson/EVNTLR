@@ -1,7 +1,12 @@
 <li>
+<%= image_tag(user.avatar_url(:small_avatar), :size => '50x50')%>&nbsp;&nbsp;&nbsp;
 <%= link_to user.name, user %>
+<div class='checkbox'>
+  <label>
+    <input type='checkbox'>
+  </label>
+</div>
 <% if current_user.admin? && !current_user?(user) %>
-|
 <%= link_to "delete", user, method: :delete,
     data: { confirm: "You sure?" } %>
 <% end %>

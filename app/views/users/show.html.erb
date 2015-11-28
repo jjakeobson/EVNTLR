@@ -2,31 +2,56 @@
 <div class="container-fluid allpages">
 
   <div class="row">
-    <div class="col-xs-12 message-frame">
+    <div class="col-xs-8 col-xs-offset-2 message-frame">
       <section class="user_info">
-        <br>
         <br><br><br><br>
-        <%= image_tag(current_user.avatar_url(:large_avatar))%>
-        
+
+        <div class='profilepic'>
+          <!-- This is where profile pic will go -->
+        <%= image_tag(@user.avatar_url(:profile_avatar), :size => '204x204')%>
+        </div>
         <h1>
           <%= @user.name %>
         </h1>
+        <br>
+        <table class='table table-condensed'>
+          <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody>
 
-        <div>
-          Reason for attending:
-          <%= @user.herefor %><br>
-          Email:
-          <%= @user.email %><br>
-          Github Profile:
-          <a href="https://www.github.com/<%= @user.githublink %>">github.com/<%= @user.githublink %></a><br>
-          Portfolio:
-          <a href="https://<%= @user.portfoliolink %>"><%= @user.portfoliolink %></a><br>
+          <tr>
+            <td><i class="fa fa-beer"></i></td>
+            <td><b>Here for:</b></td>
+            <td><%= @user.herefor %></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-envelope"></i></td>
+            <td><b>Email:</b></td>
+            <td><%= @user.email %></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-github-alt"></i></td>
+            <td><b>Github Profile:</b></td>
+            <td><a href="https://www.github.com/<%= @user.githublink %>">github.com/<%= @user.githublink %></a></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-user"></i></td>
+            <td><b>Portfolio:</b></td>
+            <td><a href="https://<%= @user.portfoliolink %>"><%= @user.portfoliolink %></a></td>
+          </tr>
+
         </div>
 
+      </tbody>
+      </table>
         <% if current_user == @user %>
-          <%= link_to "Edit", edit_user_path, class: "navlink", method: :get%>
+          <%= link_to "Edit", edit_user_path, class: "btn checkin", method: :get%>
         <% end %>
-
       </section>
     </div>
   </div>

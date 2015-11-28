@@ -4,23 +4,24 @@
   // min-height: 900px;
   background-repeat: repeat;
   overflow-y: scroll;
-
 }
-// .page-deco {
-//   background: url('/assets/balloon.jpg') no-repeat center center fixed;
-//   background-size: 100% 100%;
-// }
-// div::after { <-- add this to page-deco
-//   content: "";
-//   background: url(image.jpg);
-//   opacity: 0.5;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   position: absolute;
-//   z-index: -1;
-// }
+
+
+
+.page-deco {
+  // background: url('/assets/balloon.jpg') no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+.page-deco::after {
+  background: url('/assets/balloon.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 .message-frame{
   padding: 20vh auto;
   height: 700px;
@@ -34,6 +35,7 @@
   font-size: 2.2em;
 }
 
+//* Attendees list Page *//
 ul.users {
   padding-left: 0px;
   margin: 1em 0;
@@ -46,24 +48,29 @@ ul.users {
   border-top: 1px solid white;
   padding: 10px 10px 10px 20px;
   text-align: left;
-  list-style-image: url('default-user.png');
+  // list-style-image: url(':large_avatar');
   background-color: #6441A5;
   list-style-position: inside;
 
 }
-
 .users a {
   text-decoration: none;
   font-size: 1.5em;
   color: white;
-  font-weight: bold;
-
   margin: 0;
 }
 
 .users a:hover {
   text-decoration: none;
-  color: indigo;
+  color: MediumPurple;
+}
+
+.profilepic {
+  width:15em;
+  height: 15em;
+  margin:auto;
+  border: solid #6441A5;
+  border-radius: 5px;
 
 }
 // .message-frame {
@@ -72,4 +79,35 @@ ul.users {
 //   -moz-background-size: cover;
 //   -o-background-size: cover;
 //   background-size: cover;
+// }
+
+.table {
+  text-align: left;
+  width: 100%;
+  background-color: #6441A5;
+  border-radius: 5px;
+
+
+}
+
+td a {
+  color: white;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+td {
+  color: white;
+  font-size: 1em;
+  padding: 15px;
+}
+
+.checkbox {
+  float: right;
+//   text-align: right;
+//   margin-left: 10em;
+}
+
+// tr td {
+//   padding: 5px 5px 1px 1px;
 // }
