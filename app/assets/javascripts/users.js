@@ -8,16 +8,6 @@ $(document).on("ready page:load", function () {
         height: $(window).height()
     };
 
-    $('#message_message').focus(function() {
-      console.log('Success');
-      // alert('say something');
-      $('#footer-navbar').hide();
-    });
-    $('#message_message').blur(function() {
-      console.log('Success');
-      // alert('say something');
-      $('#footer-navbar').show();
-    });
 
     // retrieve variables as
     // viewport.width / viewport.height
@@ -82,6 +72,17 @@ $(document).on("ready page:load", function () {
         });
 
     });
+    // $(function () {
+    //     $('.messages li:even').addClass('stripe');
+    //     console.log("sucess!");
+    // });
+
+    $('#message_message').focus(function() {
+      $('#footer-navbar').hide();
+    });
+    $('#message_message').blur(function() {
+      $('#footer-navbar').show();
+    });
 });
 
 $(function () {
@@ -93,8 +94,4 @@ $(function () {
 
         if (el.val() === '') el.val(el.attr('title'));
     });
-});
-
-$(function () {
-    $('.messages li:even').addClass('stripe');
 });

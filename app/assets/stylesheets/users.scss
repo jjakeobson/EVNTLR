@@ -4,23 +4,24 @@
   // min-height: 900px;
   background-repeat: repeat;
   overflow-y: scroll;
-
 }
-// .page-deco {
-//   background: url('/assets/balloon.jpg') no-repeat center center fixed;
-//   background-size: 100% 100%;
-// }
-// div::after { <-- add this to page-deco
-//   content: "";
-//   background: url(image.jpg);
-//   opacity: 0.5;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   position: absolute;
-//   z-index: -1;
-// }
+
+
+
+.page-deco {
+  // background: url('/assets/balloon.jpg') no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+.page-deco::after {
+  background: url('/assets/balloon.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 .message-frame{
   padding: 20vh auto;
   height: 700px;
@@ -51,20 +52,16 @@ ul.users {
   list-style-position: inside;
 
 }
-
 .users a {
   text-decoration: none;
   font-size: 1.5em;
   color: white;
-  font-weight: bold;
-
   margin: 0;
 }
 
 .users a:hover {
   text-decoration: none;
-  color: indigo;
-
+  color: MediumPurple;
 }
 // .message-frame {
 //   background: url('/assets/balloon.jpg') no-repeat center center fixed;
