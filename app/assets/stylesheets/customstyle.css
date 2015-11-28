@@ -54,7 +54,7 @@ span>.fa-bars {
   font-size: 2.5em;
 }
 span>.fa-bars:hover {
-  color: indigo;
+  color: MediumPurple;
 }
 /*.evmain-body {
   background: url('/assets/miamipurple.jpg') no-repeat center center fixed;
@@ -98,7 +98,7 @@ span>.fa-bars:hover {
 }
 
 #w #navmenu ul li a:hover {
-  color: #cc99ff;
+  color: MediumPurple;
   text-decoration: none;
 }
 
@@ -112,7 +112,7 @@ span>.fa-bars:hover {
   background-color: #6441A5;
 }
 .navbar a:hover {
-  color: indigo;
+  color: MediumPurple;
 }
 
 .navbar-fixed-bottom {
@@ -126,7 +126,7 @@ span>.fa-bars:hover {
   text-decoration: none;
 }
 /*.evicon>a:hover {
-  color: indigo !important;
+  color: lavender !important;
   text-decoration: none;
 }*/
 .checkin {
@@ -144,4 +144,8 @@ span>.fa-bars:hover {
 }
 .form-control {
   margin: 2vh 0;
+}
+
+.btn:hover {
+  color: MediumPurple !important;
 }

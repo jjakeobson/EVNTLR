@@ -5,8 +5,10 @@
     <div class="col-xs-8 col-xs-offset-2 message-frame">
       <section class="user_info">
         <br><br><br><br>
+
         <div class='profilepic'>
           <!-- This is where profile pic will go -->
+        <%= image_tag(current_user.avatar_url(:large_avatar))%>
         </div>
         <h1>
           <%= @user.name %>
@@ -44,9 +46,17 @@
           </tr>
 
         </div>
+<<<<<<< HEAD
       </tbody>
       </table>
         <%= link_to "Edit", edit_user_path,class: 'btn checkin', method: :get%>
+=======
+
+        <% if current_user == @user %>
+          <%= link_to "Edit", edit_user_path, class: "navlink", method: :get%>
+        <% end %>
+
+>>>>>>> 12b27066fc52ccf4470d53135c956e7aff79eeba
       </section>
     </div>
   </div>
