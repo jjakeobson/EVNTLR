@@ -7,6 +7,24 @@ li {
   list-style: none;
 }
 
+div#user_chat {
+  margin-left: 20%;
+  float: left;
+  // border: 2px solid;
+}
+
+p#user_chat_name {
+
+  // padding-right: 25%;
+  // font-weight: bold;
+  // float: right;
+  margin-right: 10%;
+  padding-bottom: 5%;
+  // display: inline;
+  text-align: center;
+  word-wrap: break-word;
+}
+
 #set-messages {
   display: inline;
   width: 30px;
@@ -21,6 +39,11 @@ li {
 textarea#message_message {
   width: 50vw !important;
   height: 8vh !important;
+}
+
+hr {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 // li{
 //   background-color: yellow;
