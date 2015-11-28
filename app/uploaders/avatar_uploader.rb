@@ -46,6 +46,11 @@ class AvatarUploader < CarrierWave::Uploader::Base
     process :resize_to_fill => [35, 35]
   end
 
+  version :profile_avatar do
+    # returns a 35x35 image
+    process :resize_to_fill => [204, 204]
+  end
+
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   def extension_white_list
