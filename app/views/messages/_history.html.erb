@@ -1,10 +1,13 @@
 <% @messages.each do |content| %>
-<hr>
-<li>
-<%= image_tag(content.avatar)%>
 
-<b><%= content.name%></b><br>
-<%= content.message %>
+<li>
+  <div id='user_chat'>
+    <%= image_tag(content.avatar, :size => '50x50')%>
+  </div>
+  <p id='user_chat_name'>
+    <b><%= content.name%></b><br>
+       <%= content.message %>
+  </p>
 </li>
 
 
