@@ -37,8 +37,13 @@
   // opacity: 0.3;
 }
 .below_nav {
+  color: indigo;
+  font-family: "Arial Black" !important;
+  font-size: 1.5em !important;
+  text-align: left;
+  letter-spacing: 1.5px;
   margin-top: 10vh;
-  font-size: 2.2em;
+
 }
 
 //* Attendees list Page *//
@@ -49,6 +54,14 @@ ul.users {
 
 }
 
+.message-frame li:nth-child(even) {
+  background-color: white;
+}
+
+.table_bio tr:nth-child(even) {
+  background-color: white;
+}
+
 .users li {
   border-bottom: 1px solid white;
   border-top: 1px solid white;
@@ -56,6 +69,7 @@ ul.users {
   text-align: left;
   // list-style-image: url(':large_avatar');
   background-color: #9f81f7;
+  // background-color: #d8cef6;
   list-style-position: inside;
   color:
 
@@ -63,6 +77,7 @@ ul.users {
 .users a {
   text-decoration: none;
   font-size: 1.5em;
+  color: indigo;
   margin: 0;
 }
 
@@ -90,30 +105,24 @@ ul.users {
 .table {
   text-align: left;
   width: 100%;
-  background-color: #6441A5;
+  background-color: #d8cef6;
   border-radius: 5px;
 
 
 }
 
 td a {
-  color: white;
+  color: indigo;
   font-size: 1em;
   text-decoration: underline;
 }
 
 td {
-  color: white;
+  color: indigo;
   font-size: 1em;
   padding: 15px;
 }
 
 .checkbox {
   float: right;
-//   text-align: right;
-//   margin-left: 10em;
 }
-
-// tr td {
-//   padding: 5px 5px 1px 1px;
-// }
