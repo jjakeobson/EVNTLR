@@ -8,7 +8,7 @@
 
         <div class='profilepic'>
           <!-- This is where profile pic will go -->
-        <%= image_tag(current_user.avatar_url(:profile_avatar), :size => '204x204')%>
+        <%= image_tag(@user.avatar_url(:profile_avatar), :size => '204x204')%>
         </div>
         <h1>
           <%= @user.name %>
