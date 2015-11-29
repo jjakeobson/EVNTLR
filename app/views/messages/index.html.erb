@@ -1,4 +1,5 @@
 <% provide(:title, 'EVNT Buzz!') %>
+<% @user = User.take %>
 <div class="container-fluid allpages">
   <div class="row page-deco">
     <div class="col-xs-12 message-frame">
@@ -9,26 +10,29 @@
         <%= hidden_field_tag :socket_id %>
       </div>
       <section id='set-messages'>
+        <%= render 'history' %>
 
         <ul class="messages">
           <li>
-<b>Keith Tang</b><br>
+          <br>
 
 
         </ul>
       </section>
       <div class='row text_group'>
         <div class="col-xs-9">
-          <%= f.text_area :message, placeholder: "Type your messages here"%><!--, cols: 20 -->
+          <%= f.text_area :message, placeholder: "Type your messages here"%>
+          <%= f.hidden_field :name, value: current_user.name %>
+          <%= f.hidden_field :avatar, value: current_user.avatar_url(:thumb) %>
+
         </div>
           <div class="col-xs-3">
             <button type="submit" class="btn send-btn">
             <i class="fa fa-commenting"></i>
             </button>
-            <!-- <%= f.submit 'send', class: "btn send-btn"  %> -->
             <% end %>
           </div>
       </div>
     </div>
-  <!-- </div> -->
+  </div>
 </div>

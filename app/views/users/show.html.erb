@@ -2,19 +2,19 @@
 <div class="container-fluid allpages">
 
   <div class="row">
-    <div class="col-xs-8 col-xs-offset-2 message-frame">
+    <div class="col-xs-12 message-frame">
       <section class="user_info">
         <br><br><br><br>
 
         <div class='profilepic'>
           <!-- This is where profile pic will go -->
-        <%= image_tag(@user.avatar_url(:profile_avatar), :size => '204x204')%>
+        <%= image_tag(current_user.avatar_url(:profile_avatar), :size => '204x204')%>
         </div>
         <h1>
           <%= @user.name %>
         </h1>
         <br>
-        <table class='table table-condensed'>
+        <table class='table table_bio'>
           <thead>
           <tr>
           </tr>

@@ -1,0 +1,11 @@
+<% @schedulemessages.each do |content| %>
+<hr>
+<li>
+<%= image_tag(content.avatar)%>
+
+<b><%= content.name%></b><br>
+<%= content.message %>
+</li>
+
+
+<% end %>
