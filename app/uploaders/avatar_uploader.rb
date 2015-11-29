@@ -6,6 +6,8 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
 
+
+
   # Choose what kind of storage to use for this uploader:
   # storage :file
   storage :fog
@@ -22,11 +24,15 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   # Process files as they are uploaded:
-  # process :scale => [200, 300]
-  #
-  # def scale(width, height)
-  #   # do something
-  # end
+  process :do_stuff => 90
+
+      def do_stuff(degrees)
+        manipulate! do |img|
+          # img = img.adaptive_sharpen sharpen_factor
+          # img = img.auto_orient
+          img = img.rotate degrees
+        end
+      end
 
   # Create different versions of your uploaded files:
   version :thumb do
@@ -44,7 +50,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   version :profile_avatar do
-    # returns a 35x35 image
     process :resize_to_fill => [204, 204]
   end
 
