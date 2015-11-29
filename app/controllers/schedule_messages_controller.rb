@@ -26,6 +26,6 @@ class ScheduleMessagesController < ApplicationController
   end
 
   def schedule_message_params
-    params.require(:schedule_message).permit(:name, :message, :user_id)
+    params.require(:schedule_message).permit(:name, :message, :user_id, :avatar)
   end
 end
