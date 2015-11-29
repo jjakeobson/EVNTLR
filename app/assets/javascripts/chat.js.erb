@@ -24,11 +24,11 @@ $(function() {
   });
 
   function appendToMessages(data) {
-    $('.messages').append('<hr><li><b><img src=' + data.avatar +'>' + data.name + '</b><br> ' + data.message + '</li>');
+    $('.messages').append('<hr><li><img src=' + data.avatar +'><b>' + data.name + '</b><br> ' + data.message + '</li>');
   }
 
   function appendToScheduleMessages(data) {
-    $('.schedule_messages').append('<hr><li><b><img src=' + data.avatar +'>' + data.name + '</b><br> ' + data.message + '</li>');
+    $('.schedule_messages').append('<hr><li><img src=' + data.avatar +'><b>' + data.name + '</b><br> ' + data.message + '<p></li>');
   }
 
 });

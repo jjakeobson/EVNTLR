@@ -1,10 +1,11 @@
 <% @messages.each do |content| %>
 <hr>
 <li>
-<%= image_tag(content.avatar)%>
+  <%= image_tag(content.avatar)%>
+  <%= content.created_at.strftime("%I:%M %p") %>
 
-<b><%= content.name%></b><br>
-<%= content.message %>
+  <b><%= content.name %></b><br>
+  <%= content.message %>
 </li>
 
 

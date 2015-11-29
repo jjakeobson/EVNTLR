@@ -6,6 +6,6 @@
   <p id='user_chat_name'>
     <b><%= current_user.name%></b><br>
       <%= message.message %>
+      <%="#{Time.now.to_formatted_s(:time)}"%>
   </p>
-
 </li>
