@@ -4,7 +4,7 @@ $(function() {
   //var pusher = new Pusher('0cdf7561a0fb9a4dcab5');
 
   //use for local host
-  var pusher = new Pusher('8b65fe543bfd723a34d4');
+  var pusher = new Pusher('<%= ENV["PUSHER_KEY"] %>');
 
   var channel1 = pusher.subscribe('chat');
   var schedulechannel = pusher.subscribe('schedule');
