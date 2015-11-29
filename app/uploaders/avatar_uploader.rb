@@ -24,13 +24,13 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   # Process files as they are uploaded:
-  process :do_stuff
-
-      def do_stuff
-        manipulate! do |img|
-          img = img.auto_orient
-        end
-      end
+  # process :do_stuff
+  #
+  #     def do_stuff
+  #       manipulate! do |img|
+  #         img = img.auto_orient
+  #       end
+  #     end
 
   # Create different versions of your uploaded files:
   version :thumb do
