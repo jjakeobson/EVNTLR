@@ -8,21 +8,30 @@ li {
 }
 
 div#user_chat {
-  margin-left: 20%;
   float: left;
-  // border: 2px solid;
+  color: indigo;
+  text-align: center;
+  padding-top: 2%;
+  padding-left: 15%;
+}
+
+.messages>li:nth-child(even) {
+  background-color: white;
+}
+
+.messages {
+  padding-left: 5%;
 }
 
 p#user_chat_name {
 
-  // padding-right: 25%;
-  // font-weight: bold;
-  // float: right;
-  margin-right: 10%;
   padding-bottom: 5%;
-  // display: inline;
-  text-align: center;
+  padding-top:2%;
+  padding-right: 15%;
   word-wrap: break-word;
+  color: indigo;
+  background-color: #d8cef6;
+  border: 1px solid #BCA9F5;
 }
 
 #set-messages {
@@ -44,6 +53,7 @@ textarea#message_message {
 hr {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
+  color: red !important;
 }
 // li{
 //   background-color: yellow;
