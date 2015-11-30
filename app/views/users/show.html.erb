@@ -4,7 +4,13 @@
   <div class="row">
     <div class="col-xs-12 message-frame">
       <section class="user_info">
-        <br><br><br><br>
+        <br><br>
+        <% flash.each do |message_type, message| %>
+          <div class="alert alert-<%= message_type %>">
+            <%= message %>
+          </div>
+          <% end %>
+
 
         <div class='profilepic'>
           <!-- This is where profile pic will go -->
@@ -13,6 +19,7 @@
         <h1>
           <%= @user.name %>
         </h1>
+
         <br>
         <table class='table table_bio'>
           <thead>

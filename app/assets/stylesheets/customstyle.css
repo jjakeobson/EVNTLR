@@ -102,6 +102,9 @@ span>.fa-bars:hover {
   color: MediumPurple;
   text-decoration: none;
 }
+#menu i {
+  font-size: 1em;
+}
 
 .navbar a {
   color: white;

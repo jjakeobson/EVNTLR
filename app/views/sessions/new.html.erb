@@ -5,6 +5,12 @@
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2 message-frame">
       <h2 class="below_nav">Sign in</h2>
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>">
+          <%= message %>
+        </div>
+        <% end %>
+
       <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :email %>
