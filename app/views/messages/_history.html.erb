@@ -1,5 +1,6 @@
-<% @messages.each do |content| %>
 
+<% @messages.each do |content| %>
+<% if content.message != "" %>
 <li>
 
   <div id='user_chat'>
@@ -12,6 +13,6 @@
 
   </p>
 </li>
-
+ <% end %>
 
 <% end %>

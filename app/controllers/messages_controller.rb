@@ -17,7 +17,7 @@ class MessagesController < ApplicationController
                    }, socket_id: params[:socket_id])
 
     respond_to :js
-    @message.save
+    @message.save unless @message.message.empty?
   end
 
   private
