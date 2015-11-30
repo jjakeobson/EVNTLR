@@ -17,10 +17,10 @@ $(document).on("ready page:load", function() {
     }
   }
 
-  $('#message_message').focus(function() {
-    $('#footer-navbar').hide();
-  });
-  $('#message_message').blur(function() {
-    $('#footer-navbar').show();
-  });
+  // $('#message_message').focus(function() {
+  //   $('#footer-navbar').hide();
+  // });
+  // $('#message_message').blur(function() {
+  //   $('#footer-navbar').show();
+  // });
 });

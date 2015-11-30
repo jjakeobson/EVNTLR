@@ -87,16 +87,25 @@ html, body {
 #toggle div {
     cursor: pointer;
     display: block;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.8);
 }
  span#menu-icon {
-    float: left;
-    margin: 1vh 0 0 0;
+    float: right;
+    margin: 1vh 2vw 0 0;
     color: white !important;
 }
-
+span#about_us {
+   float: right;
+   margin: 1vh 4vw 0 0;
+   color: white !important;
+}
+span#profile {
+   float: right;
+   margin: 1vh 3vw 0 0;
+   color: white !important;
+}
 #toggle a {
-    margin: 0 2vw 0 4vw;
+    /*margin: 0 2vw 0 0;*/
     /*text-align: right;*/
     font-family: Arial;
     color: #fff;

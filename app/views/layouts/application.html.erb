@@ -20,30 +20,31 @@
   <div id="container">
     <div id="canvas">
       <div id="nav">
-        <h2 id="title"><i class="fa fa-sitemap"></i> MENU</h2>
+        <!-- <h2 id="title"><i class="fa fa-sitemap"></i> MENU</h2> -->
         <ul id="toggle">
           <li>
             <div class="active border">
-              <span id="menu-icon"><i class="fa fa-2x fa-child"></i></span>
+              <br>
               <%= link_to 'Profile', current_user, method: :get%>
+              <span id="profile"><i class="fa fa-2x fa-child"></i></span>
             </div>
           </li>
           <li>
             <div>
-              <span id="menu-icon"><i class="fa fa-2x fa-info"></i></span>
-              <%= link_to 'About US', root_path, method: :get%>
+              <%= link_to 'About US ', root_path, method: :get%>
+              <span id="about_us"><i class="fa fa-2x fa-info"></i></span>
             </div>
           </li>
           <li>
             <div>
+              <%= link_to 'Wyncode ', new_user_path, method: :get%>
               <span id="menu-icon"><i class="fa fa-2x fa-code"></i></span>
-              <%= link_to 'Wyncode', new_user_path, method: :get%>
             </div>
           </li>
           <li>
             <div>
+              <%= link_to 'Log out   ', logout_path, method: :delete%>
               <span id="menu-icon"><i class="fa fa-2x fa-sign-out"></i></span>
-              <%= link_to 'Log out', logout_path, method: :delete%>
             </div>
           </li>
         </ul>
