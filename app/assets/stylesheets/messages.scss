@@ -51,7 +51,7 @@ div#user_chat {
 
 p#user_chat_name {
 
-  padding-bottom: 30px;
+  padding-bottom: 5%;
   padding-top:2%;
   padding-right: 5%;
   padding-left: 16%;
@@ -59,6 +59,7 @@ p#user_chat_name {
   color: indigo;
   background-color: #d8cef6;
   border: 1px solid #BCA9F5;
+  margin-bottom: 5px !important
   // text-align: center;
 }
 
