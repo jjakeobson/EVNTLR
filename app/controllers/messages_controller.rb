@@ -12,7 +12,8 @@ class MessagesController < ApplicationController
     Pusher.trigger('chat', 'new_message', {
                      avatar: current_user.avatar_url(:thumb),
                      name: current_user.name,
-                     message: @message.message
+                     message: @message.message,
+                     timestamp: Time.now.strftime('%I:%M %p')
                    }, socket_id: params[:socket_id])
 
     respond_to :js

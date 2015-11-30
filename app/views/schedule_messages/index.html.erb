@@ -8,12 +8,15 @@
         <div style="display:none">
           <%= hidden_field_tag :socket_id %>
         </div>
+        <br>
         <section id='set-messages'>
           <%= render 'schedule_history' %>
-          <ul class="schedule_messages">
-            <li>
-            <br>
-          </ul>
+
+
+          <section class="schedule_messages">
+
+
+          </section>
         </section>
         <% if current_user.admin? %>
           <div class='row text_group'>
