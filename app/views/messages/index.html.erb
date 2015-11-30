@@ -15,25 +15,32 @@
 
 
         <section class="messages">
-          
-        </section>
-      </section>
-      <div class='container-fluid' style='text-align: center'>
-      <div class='row text_group'>
-        <div class="col-xs-9">
-          <%= f.text_area :message, placeholder: "Type your messages here"%>
-          <%= f.hidden_field :name, value: current_user.name %>
-          <%= f.hidden_field :avatar, value: current_user.avatar_url(:thumb) %>
 
-        </div>
-          <div class="col-xs-3">
-            <button type="submit" class="btn send-btn">
-            <i class="fa fa-commenting"></i>
-            </button>
-            <% end %>
-          </div>
-          </div>
-      </div>
+        </section>
+        <br><br><br><br><br>
+      </section>
     </div>
   </div>
 </div>
+
+      <div class='fixmsgsend'>
+        <!-- <div class='container-fluid' style='text-align: center'> -->
+          <!-- <div class='row text_group'> -->
+            <div class="col-xs-9">
+              <div class='whitebg'>
+                <%= f.text_area :message, placeholder: "Type your messages here", :size => "75x10" %>
+                <%= f.hidden_field :name, value: current_user.name %>
+                <%= f.hidden_field :avatar, value: current_user.avatar_url(:thumb) %>
+              </div>
+            </div>
+            <!-- <div class="col-xs-3"> -->
+
+              <button type="submit" class="btn send-btn">
+                <i class="fa fa-commenting"></i>
+              </button>
+
+
+            <% end %>
+            <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->

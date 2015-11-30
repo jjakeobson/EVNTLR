@@ -1,10 +1,16 @@
 <% @schedulemessages.each do |content| %>
-<hr>
-<li>
-<%= image_tag(content.avatar)%>
 
-<b><%= content.name%></b><br>
-<%= content.message %>
+<li>
+
+  <div id='user_chat'>
+    <%= image_tag(content.avatar, :size => '50x50')%>
+  </div>
+
+  <p id='user_chat_name'>
+    <span id='user_name'><%= content.name%></span></b><span id='created_at'><%= content.created_at.strftime("%I:%M %p") %></span><br>
+       <span id='content_msg'><%= content.message %></span>
+
+  </p>
 </li>
 
 
