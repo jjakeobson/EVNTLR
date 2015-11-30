@@ -3,20 +3,22 @@
 <div class="container-fluid allpages">
   <div class="row page-deco">
     <div class="col-xs-12 message-frame">
-      <h3 class="below_nav">Help me!</h3>
-      <h3 >I am inside a box!</h3>
+      <h3 class="below_nav">Give a Shout Out!</h3>
+      <h4 id='chatroom_title'></h4>
       <%= form_for @message, layout: :inline, remote: true do |f| %>
       <div style="display:none">
         <%= hidden_field_tag :socket_id %>
       </div>
+      <br>
       <section id='set-messages'>
         <%= render 'history' %>
 
-        <ul class="messages">
 
-
-        </ul>
+        <section class="messages">
+          
+        </section>
       </section>
+      <div class='container-fluid' style='text-align: center'>
       <div class='row text_group'>
         <div class="col-xs-9">
           <%= f.text_area :message, placeholder: "Type your messages here"%>
@@ -29,6 +31,7 @@
             <i class="fa fa-commenting"></i>
             </button>
             <% end %>
+          </div>
           </div>
       </div>
     </div>

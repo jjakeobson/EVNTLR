@@ -5,7 +5,9 @@ $(function() {
 
   //use for local host
 
-  var pusher = new Pusher('1d094167ddfc22dca54c');
+
+  var pusher = new Pusher('<%= ENV["PUSHER_KEY"] %>');
+
 
   var channel1 = pusher.subscribe('chat');
   var schedulechannel = pusher.subscribe('schedule');
@@ -25,11 +27,11 @@ $(function() {
   });
 
   function appendToMessages(data) {
-    $('.messages').append('<hr><li><b><img src=' + data.avatar +'>' + data.name + '</b><br> ' + data.message + '</li>');
+    $('.messages').append('<hr><li><img src=' + data.avatar +'><b>' + data.name + '</b><br> ' + data.message + '</li>');
   }
 
   function appendToScheduleMessages(data) {
-    $('.schedule_messages').append('<hr><li><b><img src=' + data.avatar +'>' + data.name + '</b><br> ' + data.message + '</li>');
+    $('.schedule_messages').append('<hr><li><img src=' + data.avatar +'><b>' + data.name + '</b><br> ' + data.message + '<p></li>');
   }
 
 });

@@ -11,7 +11,11 @@
     <div class="col-xs-12">
       <div class="check-in-form">
         <%= render 'users/form', :@user => User.new %>
-        <%= button_to "Check in", login_path, class: "btn checkin", method: :get%>
+        <% if logged_in? %>
+          <%= button_to "Check In", current_user, class: "btn checkin", method: :get%>
+        <% else %>
+          <%= button_to "Check In", login_path, class: "btn checkin", method: :get%>
+        <% end %>
       </div>
     </div>
   </div>
