@@ -12,7 +12,8 @@ class ScheduleMessagesController < ApplicationController
     Pusher.trigger('schedule', 'new_schedule_message', {
                      avatar: current_user.avatar_url(:thumb),
                      name: current_user.name,
-                     message: @schedulemessage.message
+                     message: @schedulemessage.message,
+                     timestamp: Time.now.strftime('%I:%M %p')
                    }, socket_id: params[:socket_id])
 
     respond_to :js
