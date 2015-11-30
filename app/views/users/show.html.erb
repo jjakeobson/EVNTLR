@@ -31,26 +31,32 @@
         <tbody>
           <tr>
             <td><i class="fa fa-envelope"></i></td>
-            <td><b>Email:</b></td>
-            <td><%= @user.email %></td>
+            <td id="left"><b>Email:</b></td>
+            <td id="right"><%= @user.email %></td>
           </tr>
 
           <tr>
             <td><i class="fa fa-beer"></i></td>
-            <td><b>Reason for Attending:</b></td>
-            <td><%= @user.herefor %></td>
+            <td id="left"><b>Why I'm Here:</b></td>
+            <td id="right"><%= @user.herefor %></td>
           </tr>
 
           <tr>
             <td><i class="fa fa-github-alt"></i></td>
-            <td><b>Github Profile:</b></td>
-            <td><a href="https://www.github.com/<%= @user.githublink %>">github.com/<%= @user.githublink %></a></td>
+            <td id="left"><b>Github:</b></td>
+            <td id="right"><a href="https://www.github.com/<%= @user.githublink %>">github.com/<%= @user.githublink %></a></td>
           </tr>
 
           <tr>
             <td><i class="fa fa-user"></i></td>
-            <td><b>Portfolio:</b></td>
-            <td><a href="https://<%= @user.portfoliolink %>"><%= @user.portfoliolink %></a></td>
+            <td id="left"><b>Portfolio:</b></td>
+            <td id="right"><a href="https://<%= @user.portfoliolink %>"><%= @user.portfoliolink %></a></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa fa-star"></i></td>
+            <td id="left"><b>One Liner:</b></td>
+            <td id="right"><%= @user.oneliner %></a></td>
           </tr>
 
         </div>

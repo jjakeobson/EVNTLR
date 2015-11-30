@@ -119,12 +119,37 @@ td a {
   text-decoration: underline;
 }
 
+td#right {
+  width: 175px;
+}
+
+td#left {
+  text-align: left;
+}
+
 td {
   color: indigo;
   font-size: 1em;
   padding: 15px;
+  text-align: center;
 }
 
 .checkbox {
   float: right;
+}
+
+input#user_herefor.form-control {
+  margin-top: 0 !important;
+}
+
+input#user_githublink.form-control {
+  margin-top: 0 !important;
+}
+
+input#user_portfoliolink.form-control {
+  margin-top: 0 !important;
+}
+
+input#user_oneliner.form-control {
+  margin-top: 0 !important;
 }

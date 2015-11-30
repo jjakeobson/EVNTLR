@@ -9,19 +9,23 @@
 
 <br>
 <b>OPTIONAL INFORMATION:</b>
-<br>
+<br><br>
 
-<%= f.label :avatar %>
+<b>Profile Picture</b>
 <%= f.file_field :avatar %>
+<br>
+Why I'm Here:
+<%= f.text_field :herefor, class: 'form-control', placeholder: "(Student, Business, Family, Friend)" %>
 
-<!-- <%= f.label :herefor, 'Reason for attending: (Student, Business, Family, Friend)' %> -->
-<%= f.text_field :herefor, class: 'form-control', placeholder: "Reason for attending: (Student, Business, Family, Friend)" %>
+Github Username:
+<%= f.text_field :githublink, class: 'form-control', placeholder: "(ONLY Username)" %>
 
-<!-- <%= f.label :githublink, 'GitHub Username: (ONLY Username)' %> -->
-<%= f.text_field :githublink, class: 'form-control', placeholder: "GitHub Username: (ONLY Username)" %>
-
-<!-- <%= f.label :portfoliolink, 'Portfolio:' %> -->
+Portfolio URL:
 <%= f.text_field :portfoliolink, class: 'form-control', placeholder: "Portfolio Site" %>
+
+One Liner:
+<%= f.text_field :oneliner, class: 'form-control', placeholder: "(Can be a quote, phrase, etc)" %>
+
 <br>
 <%= f.submit yield(:button_text), class: "btn checkin" %>
 <% end %>
