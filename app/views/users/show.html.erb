@@ -11,7 +11,9 @@
           </div>
           <% end %>
 
-          <br>
+          <% if current_user == @user %>
+            <%= link_to "Edit", edit_user_path, class: "btn checkin", method: :get%>
+          <% end %>
         <div class='profilepic'>
           <!-- This is where profile pic will go -->
         <%= image_tag(@user.avatar_url(:profile_avatar), :size => '204x204')%>
@@ -55,9 +57,7 @@
 
       </tbody>
       </table>
-        <% if current_user == @user %>
-          <%= link_to "Edit", edit_user_path, class: "btn checkin", method: :get%>
-        <% end %>
+
       </section>
       <br><br><br><br><br><br><br><br><br>
     </div>
