@@ -7,6 +7,6 @@
   <p id='user_chat_name'>
     <span id='user_name'><%= current_user.name%></span></b><span id='created_at'><%= "#{Time.now.strftime('%I:%M %p')}" %></span><br>
       <%= message.message %>
-      <%="#{Time.now.to_formatted_s(:time)}"%>
+
   </p>
 </li>
