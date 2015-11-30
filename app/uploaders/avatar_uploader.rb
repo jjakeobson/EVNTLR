@@ -43,8 +43,8 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   version :small_avatar do
-    # returns a 35x35 image
-    process :resize_to_fill => [35, 35]
+    proces :do_stuff
+    process :resize_to_fill => [36, 36]
   end
 
   version :profile_avatar do
