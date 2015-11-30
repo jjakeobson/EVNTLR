@@ -9,15 +9,25 @@ li {
 
 #created_at {
   // float: right;
-  padding-left: 25%;
+  padding-left: 10%;
+  // position: fixed;
+  float: right;
 }
 
 span#content_msg {
   text-align: left !important;
+  word-wrap: normal;
+}
+
+p#user_chat_name {
+  padding-left: 69px !important;
+}
+
+span#user_name {
 }
 
 #user_name {
-  padding-right: 6%;
+  padding-right: 10%;
   font-weight: bold;
 
 }
