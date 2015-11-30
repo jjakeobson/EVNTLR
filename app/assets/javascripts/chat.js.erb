@@ -27,8 +27,6 @@ $(function() {
   });
 
   function appendToMessages(data) {
-    var date = new Date();
-    var hhmm = date.getHours() + ":" + date.getMinutes();
     $('.messages').append("<li><div id='user_chat'><img src=" + data.avatar + "><b></div><p id='user_chat_name'><span id='user_name'>" + data.name + "</span></b><span id='created_at'>" + data.timestamp + "</span><br>" + data.message + "</p></li>");
   }
 
