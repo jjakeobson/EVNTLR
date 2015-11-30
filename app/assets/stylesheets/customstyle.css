@@ -145,8 +145,8 @@ span>.fa-bars:hover {
   background-color: #AA00FF;
   border-radius: 0px !important;
   width: 15vw;
-  height: 5vh;
-  margin-right: 11px;
+  height: 7vh;
+  margin-right: 15px;
   float: right !important;
 }
 .form-control {
@@ -182,4 +182,8 @@ span>.fa-bars:hover {
   padding-right: 15px;
   position: relative;
   width: 275.625px;
+}
+
+button.btn.send-btn {
+  padding-left: 23px;
 }
