@@ -1,11 +1,14 @@
 <%= form_for @user, :html => { :multipart => true } do |f| %>
 <%= render 'shared/error_messages', object: @user %>
 
-<!-- <%= f.label :name %> -->
+Name:
 <%= f.text_field :name, class: 'form-control', placeholder: "Full Name" %>
-
-<!-- <%= f.label :email %> -->
+Email:
 <%= f.email_field :email, class: 'form-control', placeholder: "Email" %>
+Change Password:
+<%= f.password_field :password, class: 'form-control', placeholder: "Password" %>
+<%= f.password_field :password_confirmation, class: 'form-control', placeholder: "Confirm Password" %>
+
 <br>
 <b>OPTIONAL INFORMATION:</b>
 <br>
