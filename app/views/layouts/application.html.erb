@@ -42,7 +42,7 @@
 
       <ul>
         <li>
-          <%= link_to '<span id="menu"><i class="fa fa-4x fa-child"></i></span> Profile'.html_safe, users_path, class: "navlink", method: :get%>
+          <%= link_to '<span id="menu"><i class="fa fa-4x fa-child"></i></span> Profile'.html_safe, current_user, class: "navlink", method: :get%>
         </li>
         <li>
           <%= link_to '<span id="menu"><i class="fa fa-4x fa-info"></i></span> About US'.html_safe, root_path, class: "navlink", method: :get%>
