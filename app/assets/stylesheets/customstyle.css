@@ -1,20 +1,194 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
   background-color: white;
-  position: relative;
 }
-#w #pagebody {
-  position: relative;
-  left: 0;
-  z-index: 99999;
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#canvas {
+    width: 100%;
+    height: 100%;
+    padding: 5.5% 0;
+    position: relative;
+
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+     -o-transform:translateX(0);
+        transform:translateX(0);
+
+    -webkit-transition:.7s ease all;
+    -moz-transition:.7s ease all;
+     -o-transition:.7s ease all;
+        transition:.7s ease all;
+}
+#nav {
+    width: 250px;
+    height: 100%;
+    background: indigo;
+    position: absolute;
+    left: -250px;
+    /*text-align: center;*/
+    top: 0;
+
+    -webkit-transition:.5s ease all;
+    -moz-transition:.5s ease all;
+     -o-transition:.5s ease all;
+        transition:.5s ease all;
+
+/* By default, rotate the menu 90deg inwards */
+    -webkit-transform:rotateY(-90deg);
+    -moz-transform:rotateY(-90deg);
+    -ms-transform:rotateY(-90deg);
+     -o-transform:rotateY(-90deg);
+        transform:rotateY(-90deg);
 }
 
-#toolbarnav {
-  background-color: #6441A5;
+#bars{
+  padding-top: .5vh;
+  color: white;
+  float: left;
+  font-size: 2.5em;
+}
+#bars:hover{
+    color: MediumPurple;
+}
+#title{
+    margin: 0;
+    padding: 1em;
+    color: white;
+    font-size: 1.8em;
+    font-family: Arial;
+}
+.border{
+    border-top: 1px solid rgba(0,0,0,0.2);
 }
 
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+#toggle {
+    list-style: none;
+    margin-top: 1vh;
+}
+#toggle div:hover {
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow:inset 0 -1px rgba(0,0,0,0);
+    -moz-box-shadow:inset 0 -1px rgba(0,0,0,0);
+    box-shadow:inset 0 -1px rgba(0,0,0,0);
+    color: white;
+}
+/*#toggle div.active {
+    background: #d8cef6;
+}*/
+#toggle div {
+    cursor: pointer;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+ span#menu-icon {
+    /*font-size: 20px;*/
+    /*height: 20px;
+    width: 22px;*/
+    float: left;
+    margin: 1vh 0 0 4vw;
+    color: white !important;
+}
+/*span.the-btn {
+    float: right;
+    font-size: 20px;
+    height: 30px;
+    width: 43px;
+    margin-top: 10px;
+    margin-right: 8px;
+    padding:0;
+    color: #fff;
+}*/
+/*#toggle ul {
+    list-style: disc;
+    display: none;
+    color: #fff;
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow:inset 0 -1px rgba(0,0,0,0);
+    -moz-box-shadow:inset 0 -1px rgba(0,0,0,0);
+    box-shadow:inset 0 -1px rgba(0,0,0,0);
+}*/
+/*#toggle li a {
+    line-height: 41px;
+    color: #fff;
+    list-style: circle;
+    width: 240px;
+    padding: 0;
+    margin: 0 0 0 50px;
+}*/
+#toggle a {
+    margin: 0 2vw 0 4vw;
+    text-align: right;
+    /*padding: 0;*/
+    font-family: Arial;
+    color: #fff;
+    line-height: 41px;
+    /*font-weight: normal;*/
+    font-size: 1.3em;
+    text-decoration: none;
+}
+/*#toggle ul li {
+    margin-left: 2vw;*/
+}
+/*#toggle ul li a:hover{
+    background: #MediumPurple;
+}
+#toggle ul li a {
+     margin-left: 2vw;
+}*/
+#nav {
+    width: 250px;
+    height: 100%;
+    background: indigo;
+    position: absolute;
+    left: -250px;
+    top: 0;
+
+    -webkit-transition:.7s ease all;
+    -moz-transition:.7s ease all;
+    -o-transition:.7s ease all;
+    transition:.7s ease all;
+/* By default, rotate the menu 90deg inwards */
+    -webkit-transform:rotateY(-90deg);
+    -moz-transform:rotateY(-90deg);
+    -ms-transform:rotateY(-90deg);
+     -o-transform:rotateY(-90deg);
+        transform:rotateY(-90deg);
+}
+
+#container.display-nav #canvas {
+   -webkit-transform:translateX(250px);
+   -moz-transform:translateX(250px);
+    -ms-transform:translateX(250px);
+     -o-transform:translateX(250px);
+        transform:translateX(250px);
+}
+
+/* transition the menu with perspective on "show-nav" */
+#container.display-nav #nav {
+   -webkit-transform-origin:100% 50%;
+   -moz-transform-origin:100% 50%;
+    -ms-transform-origin:100% 50%;
+     -o-transform-origin:100% 50%;
+        transform-origin:100% 50%;
+
+   -webkit-transform:perspective(500px) rotateY(0deg);
+   -moz-transform:perspective(500px) rotateY(0deg);
+    -ms-transform:perspective(500px) rotateY(0deg);
+     -o-transform:perspective(500px) rotateY(0deg);
+        transform:perspective(500px) rotateY(0deg);
+}
 #toolbarnav #logo {
   width: 150px;
   margin: 1vh auto;
@@ -23,22 +197,21 @@ html, body {
   width: 100%;
 }
 
-#w #pagebody #content {
-  height: 100%;
-  z-index: 9999;
-}
+/*#menu {
+  color: white;
+}*/
 
-#w #pagebody header#toolbarnav {
+header#toolbarnav {
   display: block;
   position: fixed;
   left: 0px;
   top: 0px;
   z-index: 9999;
   background: #6441A5 top left no-repeat;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
   border-bottom-right-radius: 0;
   -moz-border-radius-bottomright: 0;
   -webkit-border-bottom-right-radius: 0;
@@ -49,7 +222,7 @@ html, body {
   width: 100%;
 }
 
-span>.fa-bars {
+/*span>.fa-bars {
   padding-top: 1vh;
   color: white;
   float: left;
@@ -57,17 +230,8 @@ span>.fa-bars {
 }
 span>.fa-bars:hover {
   color: MediumPurple;
-}
-/*.evmain-body {
-  background: url('/assets/miamipurple.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #cc99ff;
-  text-shadow: 2px 2px 6px #000000;
 }*/
-#w #navmenu {
+/*#w #navmenu {
   background: #cc99ff;
   height: 100%;
   display: block;
@@ -77,9 +241,9 @@ span>.fa-bars:hover {
   top: 0px;
   z-index: 0;
   color: white;
-}
+}*/
 
-#w #navmenu ul {
+/*#w #navmenu ul {
   list-style: none;
   background: indigo;
   height: 100%;
@@ -105,7 +269,7 @@ span>.fa-bars:hover {
 }
 #menu i {
   font-size: 1em;
-}
+}*/
 
 .navbar a {
   color: white;
