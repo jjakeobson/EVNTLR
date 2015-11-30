@@ -43,7 +43,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   version :small_avatar do
-    proces :do_stuff
+    process :do_stuff
     process :resize_to_fill => [36, 36]
   end
 
