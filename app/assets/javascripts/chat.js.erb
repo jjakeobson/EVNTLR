@@ -21,11 +21,11 @@ $(function() {
   });
 
   function appendToMessages(data) {
-    $('.messages').append("<li><div id='user_chat'><img src=" + data.avatar + "><b></div><p id='user_chat_name'><span id='user_name'>" + data.name + "</span></b><span id='created_at'>" + data.timestamp + "</span><br>" + data.message + "</p></li>");
+    $('.messages').prepend("<li><div id='user_chat'><img src=" + data.avatar + "><b></div><p id='user_chat_name'><span id='user_name'>" + data.name + "</span></b><span id='created_at'>" + data.timestamp + "</span><br>" + data.message + "</p></li>");
   }
 
   function appendToScheduleMessages(data) {
-    $('.schedule_messages').append("<li><div id='user_chat'><img src=" + data.avatar + "><b></div><p id='user_chat_name'><span id='user_name'>" + data.name + "</span></b><span id='created_at'>" + data.timestamp + "</span><br>" + data.message + "</p></li>");
+    $('.schedule_messages').prepend("<li><div id='user_chat'><img src=" + data.avatar + "><b></div><p id='user_chat_name'><span id='user_name'>" + data.name + "</span></b><span id='created_at'>" + data.timestamp + "</span><br>" + data.message + "</p></li>");
   }
 
 });

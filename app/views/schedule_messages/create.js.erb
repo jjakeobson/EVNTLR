@@ -2,4 +2,4 @@
 $('#schedule_message_message').val('');
 
 // show the message in the messages area
-$('.schedule_messages').append('<%= escape_javascript(render @schedulemessage) %>');
+$('.schedule_messages').prepend('<%= escape_javascript(render @schedulemessage) %>');
