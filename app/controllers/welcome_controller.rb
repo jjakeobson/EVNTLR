@@ -5,6 +5,6 @@ class WelcomeController < ApplicationController
 
   end
 
-  def test
+  def wyncode
   end
 end

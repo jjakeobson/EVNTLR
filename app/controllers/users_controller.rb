@@ -25,6 +25,9 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+  
+  def wyncode
+  end
 
   def edit
   end
