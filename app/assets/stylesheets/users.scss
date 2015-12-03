@@ -1,7 +1,7 @@
 
 .allpages {
   background-color: white;
-  // min-height: 900px;
+  min-height: 1%;
   background-repeat: repeat;
   overflow-y: scroll;
 }
@@ -32,12 +32,9 @@
   z-index: -1;
 }
 .message-frame{
-  padding: 20vh auto;
+  padding: 20vh auto 30vh auto;
   height: 700px;
-  // text-align: center;
   background-color: white;
-  // background-size: 100% 100%;
-  // opacity: 0.3;
 }
 .below_nav {
   font-weight: bold;

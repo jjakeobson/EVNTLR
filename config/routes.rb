@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
   root 'welcome#index'
-  get 'welcome/test'
+  get 'pages/index'
+  get 'pages/aboutus'
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
-  
+
   resources :messages
   resources :users
   resources :schedule_messages
