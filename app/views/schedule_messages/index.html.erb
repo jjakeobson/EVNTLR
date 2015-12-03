@@ -1,8 +1,9 @@
 <% provide(:title, 'Wyncode FLL CO3 Pitch Night') %>
 <div class="container-fluid allpages">
   <div class="row page-deco">
-    <div class="col-xs-12 message-frame">
 
+    <div class="col-xs-12 message-frame">
+      <h1 class="below_nav">Welcome to PITCH DAY!</h1>
       <h3 class="below_nav">SCHEDULE OF EVENTS</h3>
       <%= form_for @schedulemessage, layout: :inline, remote: true do |f| %>
         <div style="display:none">
@@ -17,7 +18,7 @@
 
           </section>
           <%= render 'schedule_history' %>
-          
+
           <br><br><br><br><br><br><br><br><br>
 
         </section>
